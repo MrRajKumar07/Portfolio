@@ -1,111 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Raj Kumar | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Kumar - Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <!-- Background -->
-  <div id="particles-js"></div>
 
-  <!-- Header -->
-  <header>
-    <div class="nav-container">
-      <div class="logo">Raj<span>.</span></div>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <header class="header">
+    <nav class="navbar container">
+        <a href="#hero" class="logo">Raj Kumar</a>
 
-  <!-- Home -->
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h1>Hi There,</h1>
-      <h2>I'm <span>Raj Kumar</span></h2>
-      <h3>I am into <span class="typing"></span></h3>
-      <a href="#about" class="btn">About Me ↓</a>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/raj-kumar-26a3b5248" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/MrRajKumar07" target="_blank"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
-    <div class="hero-img">
-      <img src="assets/Raja.jpg" alt="Raj Avatar">
-    </div>
-  </section>
+        <button class="menu-toggle" aria-label="Open navigation menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I’m a passionate Software Engineer with a strong foundation in Java, Web Development, and Database Management. I aim to build innovative solutions while continuously learning and collaborating with teams to grow professionally.</p>
-  </section>
+        <ul class="nav-links links-nav">
+            <li><a href="#hero" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+            <li><a href="#projects" class="nav-link"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
+            <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+            <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-  <!-- Skills -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div><strong>Languages:</strong> Java (Core & EE)</div>
-      <div><strong>Web:</strong> HTML, CSS, JavaScript</div>
-      <div><strong>Frameworks:</strong> Spring Boot, Hibernate</div>
-      <div><strong>Databases:</strong> MySQL, MariaDB, MongoDB, Oracle 10g</div>
-      <div><strong>Cloud & Tools:</strong> AWS EC2/S3, GitHub, Postman, Tomcat, Glassfish</div>
-      <div><strong>IDEs:</strong> VS Code, IntelliJ, Eclipse, NetBeans</div>
-    </div>
-  </section>
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-content container">
+                <div class="hero-text">
+                    <div class="availability">Available for work</div>
+                    <h1>Hello, I'm <br>Raj Kumar An<br><span>Software Engineer</span></h1>
+                    <p>A passionate Java and Spring Boot developer with demonstrated expertise in engineering scalable microservices architectures and robust RESTful APIs, complemented by hands-on skills in cloud deployment on AWS (EC2, S3).</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <a href="https://leetcode.com/u/Kumar_Raj001/">
+                            <h3>500+</h3>
+                            <p>LeetCode Problems</p>
+                            </a>
+                        </div>
+                        <div class="stat">
+                            <h3>9.35</h3>
+                            <p>CGPA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                         <img src="https://i.postimg.cc/XJ4BByY5/raj.jpg" alt="Raj Kumar">
+                    </div>
+                    <div class="badge java">Java Developer</div>
+                    <div class="badge full-stack">Full-Stack Developer</div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Education -->
-  <section id="education" class="section">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>B.Tech in Computer Science</strong> - Jain University, Bengaluru (2026) – 9.32 CGPA</li>
-      <li><strong>Diploma in CSE</strong> - Jharkhand University of Technology (2023) – 75.6%</li>
-      <li><strong>Matriculation</strong> - A R S Public School, Bokaro Steel City (2020) – 82%</li>
-    </ul>
-  </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                    <p>Designing Solutions, Not Just Visuals</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a Software Engineering student from Jain University with a strong academic record (9.35 CGPA). My core expertise lies in Java development and building scalable applications using the Spring Framework.</p>
+                        <p>I'm dedicated to honing my skills, evidenced by solving over 500 problems on LeetCode and 80+ on HackerRank. This reflects my passion for tackling complex challenges in software engineering and continuous learning.</p>
+                        <p>I'm enthusiastic about applying my skills in a professional setting to deliver innovative software solutions. I'm open to relocation for the right opportunity and excited to contribute to impactful projects.</p>
+                    </div>
+                    <div class="about-cards">
+                        <div class="about-card"><i class='bx bx-brain'></i><h3>Problem Solver</h3><p>500+ LeetCode problems solved</p></div>
+                        <div class="about-card"><i class='bx bxs-graduation'></i><h3>Academic Excellence</h3><p>9.35 CGPA at Jain University</p></div>
+                        <div class="about-card"><i class='bx bx-layer'></i><h3>Full-Stack Developer</h3><p>Java, Spring Boot, React expertise</p></div>
+                        <div class="about-card"><i class='bx bx-rocket'></i><h3>Fast Learner</h3><p>Always ready for new challenges</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Smart Expense Tracker</h3>
-      <p>Responsive app to manage daily expenses with PHP, MySQL, AJAX, HTML/CSS/JS.</p>
-      <a href="https://github.com/MrRajKumar07/Expense-tracker" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project">
-      <h3>IDCTS – Digital Railway Booking</h3>
-      <p>Mobile-based digital seat reservation system with admin dashboard and offline support.</p>
-      <a href="https://github.com/MrRajKumar07/IDCTS" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project">
-      <h3>Tic Tac Toe Game</h3>
-      <p>Simple web-based 2-player Tic Tac Toe game with winner detection.</p>
-      <a href="https://github.com/MrRajKumar07/TIC_TAC_TOE" target="_blank">View on GitHub</a>
-    </div>
-  </section>
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Technical Skills</h2>
+                    <p>A comprehensive toolkit for building modern, scalable applications</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card"><h3><i class='bx bx-code-alt skill-icon1'></i> Languages</h3><ul><li>Java</li><li>Java EE</li><li>JavaScript</li><li>HTML</li><li>CSS</li></ul></div>
+                    <div class="skill-card"><h3><i class='bx bxs-server skill-icon2'></i> Backend</h3><ul><li>Spring Framework</li><li>Spring Boot</li><li>RESTful APIs</li><li>Microservices</li></ul></div>
+                    <div class="skill-card"><h3><i class='bx bxl-react skill-icon3'></i> Frontend</h3><ul><li>React.js</li><li>Tailwind CSS</li><li>Thymeleaf</li></ul></div>
+                    <div class="skill-card"><h3><i class='bx bxs-data skill-icon4'></i> Databases</h3><ul><li>PostgreSQL</li><li>MongoDB</li><li>MySQL</li><li>Maria DB</li><li>Oracle 10g</li></ul></div>
+                    <div class="skill-card"><h3><i class='bx bxs-cloud skill-icon5'></i> Cloud & Tools</h3><ul><li>AWS (EC2, S3)</li><li>Git</li><li>GitHub</li><li>Postman</li><li>Docker</li><li>Maven</li></ul></div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section contact">
-    <h2>Contact Me</h2>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:22btlsn002@jainuniversity.ac.in">22btlsn002@jainuniversity.ac.in</a></p>
-    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/raj-kumar-26a3b5248" target="_blank">LinkedIn</a></p>
-    <p><i class="fab fa-github"></i> <a href="https://github.com/MrRajKumar07" target="_blank">GitHub</a></p>
-  </section>
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Featured Projects</h2>
+                    <p>A showcase of my technical expertise and problem-solving capabilities</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>IDCTS – Indian Digital Catering and Travelling Services</h3>
+                        <p>A comprehensive, web-based railway reservation system designed to be scalable, secure, and user-friendly, featuring an admin dashboard for management.</p>
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Engineered a scalable microservices architecture to handle concurrent user requests.</li>
+                            <li>Ensured robust security with authentication, role-based access control, and data encryption.</li>
+                            <li>Implemented complex algorithms for seat allocation and booking validation.</li>
+                        </ul>
+                        <div class="tech-stack"><span>Java</span><span>Spring Boot</span><span>RESTful APIs</span><span>MySQL</span><span>Thymeleaf</span><span>Maven</span></div>
+                        <div class="project-links"><a href="#"><i class='bx bx-link-external'></i> Live Demo</a><a href="https://github.com/MrRajKumar07/IDCTS"><i class='bx bxl-github'></i> View on GitHub</a></div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Smart Expense Tracker Web App</h3>
+                        <p>A responsive web application that allows users to track daily expenses with a modern UI and real-time updates.</p>
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Developed full CRUD functionality with real-time updates via AJAX.</li>
+                            <li>Secured the application against common threats by implementing SQL injection prevention.</li>
+                            <li>Created an intuitive UI/UX for efficient personal finance management.</li>
+                        </ul>
+                        <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>AJAX</span></div>
+                        <div class="project-links"><a href="#"><i class='bx bx-link-external'></i> Live Demo</a><a href="https://github.com/MrRajKumar07/Expense-tracker"><i class='bx bxl-github'></i> View on GitHub</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <footer>
+        <section class="experience" id="experience">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Professional Experience</h2>
+                    <p>Building real-world experience in professional development environments</p>
+                </div>
+                <div class="experience-card">
+                    <div class="exp-icon"><i class='bx bxs-briefcase'></i></div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <h3>Java Developer Intern</h3>
+                            <p>Cognifyz Technology</p>
+                            <span>Internship</span>
+                        </div>
+                        <p class="exp-description">Gained valuable hands-on experience in a professional development environment, contributing to projects using Java, Spring Boot, and Hibernate. This role significantly enhanced my debugging, collaborative problem-solving, and teamwork skills.</p>
+                        <div class="exp-details">
+                            <div><h4>Technologies Used</h4><div class="tech-stack1"><span>Java</span><span>Spring Boot</span><span>Hibernate</span></div></div>
+                            <div><h4>Key Skills Developed</h4><div class="tech-stack2"><span>Debugging</span><span>Teamwork</span><span>Problem Solving</span></div></div>
+                            <div><h4>Impact</h4><p>Enhanced professional development skills and gained real-world project experience.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2 id="sec1">Let's Connect</h2>
+                    <p id="sec2">I'm currently seeking new opportunities and am open to messages. Whether you have a question or just want to say hi, I'll get back to you!</p>
+                </div>
+                <div class="contact-grid">
+                    <a href="mailto:22btlsn002@jainuniversity.ac.in" class="contact-card">
+                        <i class='bx bxs-envelope icon1'></i><h3>Email</h3><p>Send me a message</p><span>22btlsn002@jainuniversity.ac.in</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/raj-kumar-26a3b5248/" class="contact-card">
+                        <i class='bx bxl-linkedin-square icon2 '></i><h3>LinkedIn</h3><p>Connect with me</p><span>linkedin.com/in/raj-kumar-26a3b5248</span>
+                    </a>
+                    <a href="https://github.com/MrRajKumar07" class="contact-card">
+                        <i class='bx bxl-github icon3'></i><h3>GitHub</h3><p>View my projects</p><span>github.com/MrRajKumar07</span>
+                    </a>
+                </div>
+                <div class="contact-cta">
+                    <h3>Ready to Work Together?</h3>
+                    <p>I'm actively looking for new opportunities in software engineering and am open to relocation for the right role. Let's discuss how I can contribute to your team's success.</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:22btlsn002@jainuniversity.ac.in" class="btn btn-secondary">Send Email</a>
+                        <a href="https://drive.google.com/file/d/1FequaNdYP7lH1v-1aHM1UcTNIkT4jGqc/view?usp=drive_link" class="btn btn-primary" download>Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+          <footer>
     <p>&copy; 2025 Raj Kumar. All rights reserved.</p>
   </footer>
+    </main>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
